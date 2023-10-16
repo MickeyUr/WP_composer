@@ -1,3 +1,23 @@
 /.idea
-/vendor/
-/wordpress/
+# Exclude composer dependencies in the vendor directory
+/vendor
+
+# Exclude WordPress core
+/wordpress/*
+/wordpress/wp-includes/
+/wordpress/wp-admin/
+
+# Include wp-content, then exclude each of the subdirectories
+!/wordpress/wp-content
+/wordpress/wp-content/*
+
+## Themes: include the directory, exclude all subdirectories except those specified
+!/wordpress/wp-content/themes/
+/wordpress/wp-content/themes/*
+!/wordpress/wp-content/themes/deliciousbrains
+# Include custom themes here
+
+## Plugins: include the directory, exclude all subdirectories except those specified
+!/wordpress/wp-content/plugins/
+/wordpress/wp-content/plugins/*
+# Include custom plugins here
