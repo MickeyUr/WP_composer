@@ -1,0 +1,7 @@
+### Send POST request with json body
+POST http://18.212.162.111:9000/hooks/redeploy-webhook?token=42
+Content-Type: application/json
+
+{
+  "repoName": 999
+}
