@@ -1,3 +1,16 @@
+#vnT%3K069e\N
+#0R8oC)uN93snt7(H0(
+
+mysql --host=localhost --user=myname --password=password mydb
+
+#mysqldump -u admin --password=<pwd> <original db> | mysql -u <user name> -p <new db>
+#mysqldump -u admin --password='vnT%3K069e\N' -h database-1.caolziandlh6.us-east-1.rds.amazonaws.com wp_main | mysql --password='vnT%3K069e\N' --user=admin --host=database-1.caolziandlh6.us-east-1.rds.amazonaws.com wp_dev
+
+mysql --user=admin --password=vnT%3K069e\N --host=database-1.caolziandlh6.us-east-1.rds.amazonaws.com
+
+mysql --password='vnT%3K069e\N' --user=admin --host=database-1.caolziandlh6.us-east-1.rds.amazonaws.com -e "CREATE DATABASE wp_dev;"
+mysql --password='vnT%3K069e\N' --user=admin --host=database-1.caolziandlh6.us-east-1.rds.amazonaws.com -e "CREATE DATABASE $dbname;"
+
 #!/bin/sh
 repoName=$1
 branch=$2

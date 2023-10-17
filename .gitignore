@@ -15,6 +15,7 @@
 !/wordpress/wp-content/themes/
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/deliciousbrains
+!/wordpress/wp-content/themes/twentytwentyfive
 # Include custom themes here
 
 ## Plugins: include the directory, exclude all subdirectories except those specified
