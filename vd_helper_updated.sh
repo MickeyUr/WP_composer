@@ -655,6 +655,7 @@ echo "$purple2 Dont forget to open 9000 port in AWS security group!!! $end"
 #kill all on 9000 port
 #sudo kill -9 `sudo lsof -t -i:9000`
 sudo -b webhook -hooks /var/www/webhooks/hooks.json /dev/null 2>&1 &
+#sudo -b webhook -hooks /var/www/webhooks/hooks.json -verbose
 #sudo -b webhook -hooks /var/www/webhooks/hooks.json -ip="$webhook_ip" /dev/null 2>&1 &
 #done
 }
